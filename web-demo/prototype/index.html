@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Visual prototype for Golden Eagle Anatomy, an interactive learning experience by Ashutosh Kumar E-Learning.">
+<title>Golden Eagle Anatomy | Living Anatomy Lab</title>
+<style>
+:root{color-scheme:dark;--bg:#0a1015;--panel:#111b22;--panel2:#17252d;--ink:#f2f4ef;--muted:#a8b7bc;--gold:#d7b56d;--teal:#6fc3b1;--line:#2a3b43;--focus:#fff0a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1b3036 0,transparent 42%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--gold)}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.wrap{max-width:1120px;margin:auto;padding:0 24px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}.edition{color:var(--muted);font-size:.85rem}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:76px 0 60px}.eyebrow{color:var(--teal);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}.hero h1{font-size:clamp(2.5rem,6vw,5.2rem);line-height:.99;letter-spacing:-.055em;margin:18px 0 22px;max-width:650px}.hero h1 span{color:var(--gold)}.lead{color:#c2cdd0;font-size:1.1rem;max-width:560px}.meta{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}.pill{border:1px solid #3a4d53;border-radius:999px;padding:6px 12px;color:#d4dddc;font-size:.82rem}.primary{border:0;background:var(--gold);color:#111713;border-radius:6px;padding:13px 18px;font-weight:800;font-size:.95rem;cursor:pointer}.secondary{border:1px solid #51666b;background:transparent;color:var(--ink);border-radius:6px;padding:12px 16px;font-weight:650;cursor:pointer}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-art{min-height:390px;position:relative;border:1px solid #3b4d51;border-radius:18px;overflow:hidden;background:linear-gradient(155deg,#22363a,#10191f 58%,#080e12);display:flex;align-items:center;justify-content:center}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #526b6b55;border-radius:50%;width:330px;height:330px}.hero-art:after{width:245px;height:245px}.contours{position:absolute;inset:0;opacity:.24;background:repeating-radial-gradient(ellipse at 70% 65%,transparent 0 20px,#7c9a8b 21px 22px,transparent 23px 38px);mask-image:linear-gradient(135deg,transparent,#000)}.eagle{position:relative;width:88%;max-width:470px;z-index:1;filter:drop-shadow(0 18px 20px #0009)}.art-caption{position:absolute;bottom:18px;left:20px;right:20px;display:flex;justify-content:space-between;gap:12px;color:#bdc9c7;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;z-index:2}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:10px 0 22px}.section-head h2{font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.03em;margin:5px 0}.section-head p{color:var(--muted);max-width:430px;margin:0}.missions{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:54px}.mission{border:1px solid var(--line);background:linear-gradient(150deg,#17242a,#0f171d);border-radius:12px;padding:22px;min-height:265px;display:flex;flex-direction:column;transition:transform .18s,border-color .18s}.mission:hover{transform:translateY(-3px);border-color:#6a7771}.mission-number{color:var(--gold);font-size:.8rem;letter-spacing:.14em;font-weight:800}.mission h3{font-size:1.35rem;margin:18px 0 8px}.mission p{color:var(--muted);margin:0 0 22px}.mission button{margin-top:auto;align-self:flex-start}.symbol{height:54px;width:54px;border:1px solid #51665f;border-radius:50%;display:grid;place-items:center;color:var(--teal);font-size:1.5rem}.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:64px}.info{background:#101a20;border:1px solid var(--line);border-radius:12px;padding:24px}.info h3{margin-top:0}.info p,.info li{color:var(--muted)}.status{display:none;margin-top:18px;padding:14px 16px;border-left:3px solid var(--teal);background:#142822;color:#e1f1e8;border-radius:0 6px 6px 0}.status.visible{display:block}.foot{border-top:1px solid var(--line);padding:22px 0 36px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#dce4df}.note{color:#91a5a8;font-size:.78rem;margin-top:12px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding:48px 0}.hero-art{min-height:300px}.missions{grid-template-columns:1fr}.mission{min-height:220px}.bottom-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.edition{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap top"><div class="brand">Ashutosh Kumar E-Learning</div><div class="edition">FIELD STUDY 01 · RAPTOR ANATOMY</div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="course-title">
+<div>
+<div class="eyebrow">Living Anatomy Lab</div>
+<h1 id="course-title">Golden Eagle <span>Anatomy</span></h1>
+<p class="lead">Look closer. Learn the structures. Discover how the Golden Eagle’s head, flight system, and feet work together.</p>
+<div class="meta"><span class="pill">15–20 minutes</span><span class="pill">Beginner friendly</span><span class="pill">3 field missions</span></div>
+<div class="actions"><button class="primary" id="begin">Enter the lab <span aria-hidden="true">↗</span></button><a class="secondary" href="#missions" style="text-decoration:none">Explore missions</a></div>
+<p class="note">Visual design prototype — not the final learning course. The illustration is decorative and is not an anatomical reference.</p>
+<div class="status" id="announcement" role="status" aria-live="polite"></div>
+</div>
+<div class="hero-art" role="img" aria-label="Decorative stylized eagle silhouette against dark topographic contours; not intended for anatomical identification">
+<div class="contours" aria-hidden="true"></div>
+<svg class="eagle" viewBox="0 0 520 360" aria-hidden="true">
+<defs><linearGradient id="feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2c88d"/><stop offset=".48" stop-color="#8d7955"/><stop offset="1" stop-color="#34484a"/></linearGradient></defs>
+<path fill="url(#feather)" d="M255 171 C205 143 155 91 43 73 C76 101 105 128 134 154 C99 137 65 129 17 129 C65 153 104 178 151 202 C110 195 77 201 39 218 C99 220 145 239 187 259 C210 274 229 282 249 284 L275 280 C306 257 334 240 375 224 C422 206 460 188 503 153 C453 172 412 177 371 184 C419 151 454 120 482 84 C424 117 374 135 326 157 C300 164 277 166 255 171Z"/>
+<path fill="#172328" d="M231 168 C252 143 276 138 296 159 L321 208 L293 246 L271 275 L246 269 L231 230 L213 201Z"/>
+<path fill="#d7b56d" d="M283 147 C300 134 315 137 326 150 L311 163 L291 160Z"/>
+<path fill="#d7b56d" d="M319 148 L348 153 L329 164 L310 161Z"/>
+<path fill="#111a1f" d="M245 260 L253 292 L241 312 L253 315 L269 292 L274 265Z"/>
+<path fill="#d7b56d" d="M240 309 L229 320 L246 318 L254 313 L262 320 L278 317 L267 309Z"/>
+<path fill="none" stroke="#f0d9a1" stroke-width="2" opacity=".55" d="M76 105 Q169 142 238 184 M57 143 Q159 170 225 200 M95 207 Q166 214 228 235 M431 119 Q356 153 307 179 M461 164 Q369 185 313 204"/>
+</svg>
+<div class="art-caption"><span>Aquila chrysaetos</span><span>Field study / 01</span></div>
+</div>
+</section>
+<section id="missions" aria-labelledby="missions-title">
+<div class="section-head"><div><div class="eyebrow">Your expedition</div><h2 id="missions-title">Three missions. One remarkable bird.</h2></div><p>Explore each region, inspect the visible structures, then prove what you’ve learned in a short challenge.</p></div>
+<div class="missions">
+<article class="mission"><div class="symbol" aria-hidden="true">⌁</div><div class="mission-number">MISSION 01</div><h3>The Hunter’s Head</h3><p>Explore the bill, eye, crown, and nape. Learn what can—and cannot—be identified from a close-up.</p><button class="secondary" data-mission="The Hunter’s Head">Preview mission</button></article>
+<article class="mission"><div class="symbol" aria-hidden="true">⟋</div><div class="mission-number">MISSION 02</div><h3>The Flight System</h3><p>Inspect the wing, flight-feather groups, and tail. Connect visible structure with flight, carefully.</p><button class="secondary" data-mission="The Flight System">Preview mission</button></article>
+<article class="mission"><div class="symbol" aria-hidden="true">⌘</div><div class="mission-number">MISSION 03</div><h3>The Capture System</h3><p>Distinguish the feathered leg, digits, and talons, with a small amount of supporting skeletal context.</p><button class="secondary" data-mission="The Capture System">Preview mission</button></article>
+</div>
+</section>
+<section class="bottom-grid" aria-label="Course approach and completion">
+<div class="info"><h3>How the lab works</h3><ul><li>Observe a verified image or reviewed diagram.</li><li>Reveal focused labels and magnified details.</li><li>Answer a short challenge with explanatory feedback.</li><li>Review and retry within the course rules.</li></ul></div>
+<div class="info"><h3>Expedition completion</h3><p>Complete all three mission challenges and pass the final 10-question assessment with at least 70% to complete the learning journey.</p><p>Scientific labels and photo rights will be reviewed before the production course is released.</p></div>
+</section>
+</main>
+<footer class="wrap foot"><span><strong>Ashutosh Kumar E-Learning</strong> · Golden Eagle Anatomy</span><span>Interactive visual prototype · v0.1</span></footer>
+<script>
+const announcement=document.getElementById('announcement');
+function announce(message){announcement.textContent=message;announcement.classList.add('visible');}
+document.getElementById('begin').addEventListener('click',()=>{document.getElementById('missions').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});announce('Prototype preview: choose a mission below to inspect its planned learning focus.');});
+document.querySelectorAll('[data-mission]').forEach(button=>button.addEventListener('click',()=>announce(button.dataset.mission+' — mission preview selected. Detailed imagery, labels, and scored interactions will be added after asset verification.')));
+</script>
+</body>
+</html>
